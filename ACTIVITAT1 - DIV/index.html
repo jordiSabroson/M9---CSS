@@ -4,8 +4,20 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style.css" />
     <title>DIV</title>
+    <link rel="stylesheet" href="style/float.css" />
+    <script>
+        function changeCSS(cssFile, cssLinkIndex) {
+
+            var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+            var newlink = document.createElement("link");
+            newlink.setAttribute("rel", "stylesheet");
+            newlink.setAttribute("href", cssFile);
+
+            document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+        }
+    </script>
 </head>
 
 <body>
@@ -31,11 +43,11 @@
             </article>
         </main>
         <aside>
-            <div class="menu">
-                Menu 1
+            <div class="menu" onclick="changeCSS('style/float.css', 0)">
+                Float
             </div>
-            <div class="menu">
-                Menu 2
+            <div class="menu" onclick="changeCSS('style/flex.css', 0)">
+                Flex
             </div>
         </aside>
     </div>

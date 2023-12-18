@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding: 3vh;
+    border: 1px solid blue;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    border: 1px solid greenyellow;
+}
+
+main {
+    border: 1px solid brown;
+    padding: 3vh;
+    float: left;
+    width: 70%;
+}
+
+article {
+    border: 1px solid fuchsia;
+    width: 100%;
+}
+
+.titol {
+    border: 1px solid greenyellow;
+    color: lightskyblue;
+    font-size: 30px;
+    margin: 2%;
+}
+
+.lorem {
+    border: 1px solid greenyellow;
+    margin: 2%;
+}
+
+aside {
+    border: 1px solid greenyellow;
+    float: left;
+    width: 28%;
+}
+
+.menu {
+    border: 1px solid black;
+    background-color: #4264a2;
+    font-size: 4vh;
+    color: white;
+    text-align: center;
+    width: 40%;
+    float: center;
+    margin: 0 auto;
+    margin-top: 15%;
+}
