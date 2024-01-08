@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+span {
+    transition: width 2s, height 2s, transform 2s, font-size 2s;
+}
+
+span:hover {
+    font-size: 55px;
+    line-height: 4em;
+    width: 4em;
+    transform: rotate(45deg) scale(1.2, 1.2);
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section div{
+    width: 24.6%;
+    margin: 0.2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div:nth-of-type(5) {
+    width: 100%;
+}
+
+@media (max-width:1024px) {
+    div {
+        width: 48%;
+    }
+}
