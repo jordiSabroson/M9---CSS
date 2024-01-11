@@ -26,12 +26,24 @@ section div{
     align-items: center;
 }
 
-div:nth-of-type(5) {
-    width: 100%;
+div:nth-of-type(9) {
+    height: 100%;
 }
 
 @media (max-width:1024px) {
-    div {
+    section div {
+            height: 300px;
         width: 48%;
     }
+}
+
+@media (max-width:600px) {
+    section div {
+        height: 300px;
+        width: 99%;
+    }
+}
+
+div:nth-of-type(1) {
+    justify-content: center;
 }
