@@ -18,7 +18,7 @@ section {
     flex-wrap: wrap;
 }
 
-section div{
+section div {
     width: 24.6%;
     margin: 0.2%;
     display: flex;
@@ -32,7 +32,7 @@ div:nth-of-type(9) {
 
 @media (max-width:1024px) {
     section div {
-            height: 300px;
+        height: 300px;
         width: 48%;
     }
 }
@@ -46,4 +46,30 @@ div:nth-of-type(9) {
 
 div:nth-of-type(1) {
     justify-content: center;
+}
+
+/*  Exercici 7 */
+/* div:nth-of-type(1n+4) {
+    display: none;
+} */
+
+/* Exercici 8 */
+section {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+div {
+    width: 33%;
+    height: 24%;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div:last-child {
+    height: 100%;
 }
