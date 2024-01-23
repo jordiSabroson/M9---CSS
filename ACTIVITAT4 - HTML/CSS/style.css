@@ -6,11 +6,17 @@
 }
 
 nav {
-    float: right;
     width: 100%;
+    height: 40px;
     background-color: #333;
     padding: 10px;
-    position: sticky;
+    position: fixed;
+    top: 0px;
+}
+
+.navbar {
+    float: right;
+    margin-right: 15px;
 }
 
 button {
@@ -24,4 +30,17 @@ button {
 
 button:hover {
     background-color: #777;
+}
+
+section img {
+    width: 100%;
+}
+
+section div {
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    float: left;
+    font-size: 2rem;
+    color: wheat;
 }
