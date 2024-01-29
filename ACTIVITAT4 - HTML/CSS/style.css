@@ -1,7 +1,7 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-size: 1rem;
 }
 
@@ -12,6 +12,7 @@ nav {
     padding: 10px;
     position: fixed;
     top: 0px;
+    z-index: 1000;
 }
 
 .navbar {
@@ -28,19 +29,60 @@ button {
     cursor: pointer;
 }
 
+.mainpage {
+    position: relative;
+}
+
 button:hover {
     background-color: #777;
 }
 
-section img {
+.mainpage img {
     width: 100%;
+    display: block;
 }
 
-section div {
+.titol {
     position: absolute;
-    top: 55%;
-    left: 20%;
+    top: 40%;
+    left: 35%;
+    transform: translate(-50%, -50%);
     float: left;
     font-size: 2rem;
     color: wheat;
+}
+
+section {
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.about_us h2 {
+    font-size: 4vh;
+    margin-bottom:20px;
+}
+
+.abt_us1 img{
+    float: left;
+    margin-right: 20px;
+}
+
+.abt_us1 p{
+    float: right;
+    width: 50%;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+.abt_us2 img{
+    float: right;
+    margin-left: 20px;
+}
+
+.abt_us2 p{
+    float: left;
+    width: 50%;
+    margin-bottom: 10px;
+    line-height: 25px;
 }
