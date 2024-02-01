@@ -53,12 +53,13 @@ button:hover {
 }
 
 section {
+    overflow: auto;
     margin-top: 50px;
     margin-left: 20%;
     margin-right: 20%;
 }
 
-.about_us h2 {
+h2 {
     font-size: 4vh;
     margin-bottom:20px;
 }
@@ -69,8 +70,6 @@ section {
 }
 
 .abt_us1 p{
-    float: right;
-    width: 50%;
     margin-bottom: 10px;
     line-height: 25px;
 }
@@ -81,8 +80,55 @@ section {
 }
 
 .abt_us2 p{
-    float: left;
-    width: 50%;
+    margin-top: 20px;
     margin-bottom: 10px;
     line-height: 25px;
+}
+
+.carta {
+    display: grid;
+    grid-template-columns: 15% 40% 40%;
+    gap: 1rem;
+}
+
+.menu {
+    grid-column: 1 / span 3;
+    height: 3rem;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.menu1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid red 1px;
+    grid-row: 3 / 5;
+    vertical-align: middle;
+}
+
+.info_menu {
+    border: solid yellow 1px;
+    grid-column: 2 / 4;
+}
+
+.kebab1 {
+    position: relative;
+}
+
+.kebab1 img{
+    max-width: 80%;
+}
+
+.kebab1 p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-75%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    margin: 0;
 }
